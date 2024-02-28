@@ -1,0 +1,993 @@
+/* ================= LOADER ================== */
+
+.hytech-loader-inner {
+    background: #eee;
+}
+
+.hytech-loader {
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #6658ea;
+}
+
+/* ================= GENERAL STYLES ================== */
+
+* {
+    scrollbar-color: #aaa #fff;
+}
+
+*::-webkit-scrollbar-track {
+    background: #303030;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border: 4px solid #303030;
+}
+
+body {
+    background: #eee;
+    color: #494949;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #111;
+}
+
+.text-danger {
+    color: #F44336 !important;
+}
+
+.text-success {
+    color: #009688 !important;
+}
+
+.text-warning {
+    color: #FFC107 !important;
+}
+
+.text-white {
+    color: #111 !important;
+}
+
+#hytech-icon-panel hr {
+    border-bottom: 1px dashed #bcbcbc;
+}
+
+.notice {
+    color: #494949;
+    background: rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #6658ea;
+}
+
+.notice.notice-danger {
+    border-left: 4px solid #F44336;
+}
+
+.notice.notice-warning {
+    border-left: 4px solid #FFC107;
+}
+
+.notice.notice-success {
+    border-left: 4px solid #009688;
+}
+
+.hytech-img-loader {
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #6658ea;
+}
+
+
+/* ================= PAGE STRUCTURE ================== */
+
+#hytech-toggle-left,
+#hytech-toggle-right {
+    background-color: #fff;
+    border: 1px solid #bcbcbc;
+}
+
+#hytech-toggle-right.closed,
+#hytech-toggle-left.closed {
+    background-color: #fff;
+}
+
+#hytech-toggle-left .material-icons,
+#hytech-toggle-right .material-icons {
+    color: #111;
+}
+
+#hytech-toggle-left:hover .material-icons,
+#hytech-toggle-right:hover .material-icons {
+    color: #6658ea;
+}
+
+/* ================= TOP BAR ================== */
+
+#hytech-top-bar {
+    background: #eee;
+    border-bottom: 1px solid #bcbcbc;
+}
+
+.hytech-top-bar-menu .hytech-btn-simple {
+    color:#111;
+}
+  
+.hytech-top-bar-menu .hytech-btn-simple:disabled {
+    color:#494949
+}
+
+/* ================= DROPDOWN ================== */
+
+ul.hytech-dropdown {
+    background: #fff;
+    border: 1px solid #bcbcbc;
+}
+
+ul.hytech-dropdown li {
+    border-bottom: 1px solid #bcbcbc;
+}
+
+ul.hytech-dropdown li a {
+    color: #494949;
+}
+
+ul.hytech-dropdown li a:hover {
+    color: #111;
+}
+
+ul.hytech-dropdown li a .material-icons {
+    color: #6658ea;
+}
+
+/* ================= CONTENT BAR ================== */
+
+.hytech-content-bar {
+    background: #fff;
+    border: 1px solid #bcbcbc;
+}
+
+.hytech-content-bar .hytech-img-size {
+    border-right: 1px solid #bcbcbc;
+}
+
+.hytech-content-bar .hytech-counter .hytech-btn,
+.hytech-content-bar .hytech-counter .hytech-btn:hover,
+.hytech-content-bar .hytech-counter .hytech-btn:focus {
+    background: #fff;
+    color: #494949;
+}
+
+.hytech-content-bar .hytech-counter .hytech-btn:hover {
+    color: #111;
+}
+
+.hytech-counter .hytech-btn:disabled {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.hytech-content-bar .hytech-counter:after {
+    background: #eee;
+}
+
+#hytech-img-drag {
+    border-right: 1px solid #bcbcbc;
+    background: #fff;
+    color: #494949;
+}
+
+#hytech-img-drag:hover,
+#hytech-img-drag.active {
+    background: #eee;
+    color: #111;
+}
+
+/* ================= ICON MENU ================== */
+
+#hytech-icon-menu {
+    background: #eee;
+}
+
+#hytech-icon-menu.closed {
+    border-right: 1px solid #bcbcbc;
+}
+
+button.hytech-icon-menu-btn {
+    color: #494949;
+    background: #eee;
+}
+
+button.hytech-icon-menu-btn.active,
+button.hytech-icon-menu-btn:hover {
+    color: #000;
+    background: #fff;
+}
+
+#hytech-icon-panel {
+    border-right: 1px solid #bcbcbc;
+    background: #fff;
+}
+
+/* ================= CONTENT ================== */
+
+#hytech-content {
+    background-color: #f9f9f9;
+}
+
+#hytech-canvas-wrap {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2' height='2'%3E%3Cpath d='M1,0H0V1H2V2H1' fill='%23FFFFFF'/%3E%3C/svg%3E") left top/contain #ccc;
+    background-size: 15px 15px;
+}
+
+#hytech-canvas-loader {
+    background: #fff;
+}
+
+/* ================= LAYERS ================== */
+
+#hytech-right-col {
+    border-left: 1px solid #bcbcbc;
+    background: #fff;
+}
+
+.hytech-layers-title {
+    background: #eee;
+}
+
+#hytech-layers li {
+    color: #494949;
+    border-bottom: 1px solid #bcbcbc;
+    background: #fff;
+}
+
+#hytech-layers li:first-child {
+    border-top: 1px solid #bcbcbc;
+}
+
+#hytech-layers li:hover {
+    color: #111;
+}
+
+#hytech-layers li.active {
+    color: #111;
+    background: #eee;
+}
+
+#hytech-layers li .layer-icons {
+    background: #eee;
+}
+
+#hytech-layers li .layer-name {
+    color:#494949;
+}
+
+#hytech-layers li .layer-name:focus {
+    color:#111;
+}
+
+#hytech-layers li .layer-icons .material-icons {
+    color: #111;
+}
+
+#hytech-layers>li>.material-icons {
+    color: #6658ea;
+}
+
+#hytech-layers>li>.material-icons.layer-settings {
+    background: #eee;
+    color: #494949;
+}
+
+#hytech-layers>li>.material-icons.layer-settings:hover,
+#hytech-layers>li>.material-icons.layer-settings.active {
+    color: #111;
+}
+
+#hytech-layers li .layer-icons .layer-visible,
+#hytech-layers li .layer-icons .layer-unlocked {
+    color: #009688;
+}
+
+#hytech-layers li .layer-icons .layer-hidden,
+#hytech-layers li .layer-icons .layer-locked {
+    color: #FFC107;
+}
+
+#hytech-no-layer a {
+    color: #6658ea;
+}
+
+#hytech-layer-delete-wrap {
+    border-top: 1px dashed #bcbcbc;
+}
+
+/* ================= GRID ================== */
+
+.hytech-frames-grid .grid-item,
+.hytech-grid .grid-item {
+    background: #eee;
+}
+
+.hytech-frame,
+.hytech-element {
+    border: 1px solid #eee;
+    background: #eee;
+}
+
+.type-customSVG>a:before {
+    color: #4CAF50;
+}
+
+.hytech-element.light {
+    background: #eee;
+}
+
+.hytech-element.dark {
+    background: #6658ea;
+  border-color: #6658ea;
+}
+
+.hytech-frame:hover,
+.hytech-element:hover {
+    border: 1px solid #6658ea;
+}
+
+.hytech-element.dark:hover {
+  border-color: #1B1642;
+}
+
+.template-favorite,
+.hytech-frame .frame-favorite,
+.hytech-element .element-favorite {
+    background: #6658ea;
+}
+
+.hytech-element.dark .element-favorite {
+  background: #1B1642;
+}
+
+
+.hytech-frames-grid .hytech-frame {
+    border: 3px solid #eee;
+}
+
+.hytech-frames-grid .hytech-frame:hover {
+    border: 3px solid #111;
+}
+
+.grid-icon-item {
+    color: #494949;
+    border: 1px solid #bcbcbc;
+}
+
+.grid-icon-item:hover {
+    border: 1px solid #6658ea;
+    color: #fff;
+}
+
+.grid-icon-item .material-icons {
+    color: #6658ea;
+}
+
+.grid-icon-label {
+    border-top: 1px solid #bcbcbc;
+}
+
+/* ================= ELEMENTS ================== */
+
+#hytech-filters.hytech-grid img:hover {
+    border: 3px solid #6658ea;
+}
+
+#hytech-filters.hytech-grid div label span {
+    background: #eee;
+    color: #494949;
+}
+
+#hytech-filters.hytech-grid input[type=checkbox]:checked+label img,
+#hytech-filters.hytech-grid input[type=radio]:checked+label img {
+    border: 3px solid #6658ea
+}
+
+#hytech-filters.hytech-grid div:hover span,
+#hytech-filters.hytech-grid input[type=checkbox]:checked+label>span,
+#hytech-filters.hytech-grid input[type=radio]:checked+label>span {
+    color: #fff;
+    background: #6658ea
+}
+
+.hytech-element>.material-icons {
+    color: #494949;
+}
+
+/* ================= BUTTONS ================== */
+
+.hytech-btn-simple {
+    color: #494949;
+}
+
+.hytech-btn-simple:hover,
+.hytech-btn-simple.active {
+    color: #111;
+}
+
+.hytech-btn-simple:disabled {
+    color: #494949;
+}
+
+.hytech-btn-simple.star {
+    color: #FF9800 !important;
+}
+
+.hytech-btn {
+    background: #eee;
+    color: #111;
+}
+
+.hytech-btn:hover,
+.hytech-btn.primary:hover {
+    background: #5546e8;
+    color:#fff;
+}
+
+.hytech-btn.active,
+.hytech-btn.active:hover,
+.hytech-btn.primary {
+    background: #6658ea;
+    color: #fff;
+}
+
+.hytech-btn.danger {
+    background: #F44336;
+    color:#fff;
+}
+
+.hytech-btn.danger:hover {
+    background: #D32F2F;
+    color:#fff;
+}
+
+.hytech-horizontal-center.active,
+.hytech-vertical-center.active {
+    background: #eee !important;
+}
+
+/* ================= BLOCKS ================== */
+
+.icon-group {
+    border: 1px solid #bcbcbc;
+    background: #bcbcbc
+}
+
+.icon-group .hytech-btn {
+    border-right: 1px solid #bcbcbc;
+}
+
+.icon-group .hytech-btn:hover,
+.icon-group .hytech-btn.active {
+    background: #fff;
+  color:#111
+}
+
+/* ================= TOOLTIP ================== */
+
+.tooltip:after {
+    background-color: #111;
+    color: #fff;
+}
+
+.tooltip:before {
+    border-color: #111 transparent;
+}
+
+/* ================= PAGINATION ================== */
+
+.hytech-pagination ul li {
+    border: 1px solid #bcbcbc;
+    color: #494949;
+}
+
+.hytech-pagination ul li.active,
+.hytech-pagination ul li.active:hover {
+    background: #6658ea;
+    border-color: #6658ea;
+    color: #fff;
+}
+
+.hytech-pagination ul li:hover {
+    border-color: #6658ea;
+}
+
+.hytech-pagination ul li a {
+    color: #111;
+}
+
+.hytech-accordion .hytech-pagination ul li {
+    color: #494949;
+    background: #eee;
+}
+
+.hytech-accordion .hytech-pagination ul li.active,
+.hytech-accordion .hytech-pagination ul li.active:hover {
+    color: #fff;
+    background: #6658ea;
+}
+
+.hytech-accordion .hytech-pagination ul li a,
+.hytech-accordion .hytech-pagination ul li>span {
+    color: #494949;
+}
+
+.hytech-accordion .hytech-pagination ul li a:hover {
+    color: #111
+}
+
+.hytech-accordion .hytech-pagination ul li.active>span {
+    color: #fff
+}
+
+/* ================= ACCORDION ================== */
+
+ul.hytech-accordion>li {
+    border: 1px solid #bcbcbc;
+}
+
+ul.hytech-accordion>li.opened {
+    border-color: #6658ea;
+}
+
+ul.hytech-accordion>li>a {
+    color: #494949;
+}
+
+ul.hytech-accordion>li>a:hover,
+ul.hytech-accordion>li.opened>a {
+    color: #111;
+}
+
+ul.hytech-accordion>li.opened>a {
+    border-bottom: 1px solid #bcbcbc
+}
+
+ul.hytech-accordion>li>a>.data-count {
+    background: #6658ea;
+    color: #fff;
+}
+
+/* ================= RANGESLIDER ================== */
+
+.hytech-slider {
+    background: #bcbcbc;
+}
+
+.hytech-slider::-webkit-slider-thumb {
+    background: #6658ea;
+    border: 3px solid #fff;
+}
+
+.hytech-slider::-moz-range-thumb {
+    background: #6658ea;
+    border: 3px solid #fff;
+}
+
+/* ================= COUNTER ================== */
+
+.hytech-counter .hytech-btn,
+.hytech-counter .hytech-btn:hover,
+.hytech-counter .hytech-btn:focus {
+    background: #bcbcbc;
+}
+
+.hytech-counter .hytech-btn:disabled {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+/* ================= CONTROLS ================== */
+
+.hytech-control-label span {
+    background: #eee;
+    color: #111;
+}
+
+.hytech-form-field {
+    background: #eee;
+    border: 1px solid #bcbcbc;
+    color: #494949;
+}
+
+.hytech-form-field:focus {
+    background: #fff;
+    border: 1px solid #6658ea;
+    color: #111;
+}
+
+.hytech-search-wrap .material-icons {
+    color: #494949;
+}
+
+#hytech-element-search-icon.cancel,
+#hytech-icon-search-icon.cancel {
+    color: #F44336;
+}
+
+.hytech-sub-settings {
+    border-top: 1px dashed #bcbcbc;
+}
+
+/* ================= COLORPICKER ================== */
+
+.hytech-colorpicker,
+.hytech-colorpicker:focus,
+.hytech-form-field {
+    background: #eee;
+    border: 1px solid #bcbcbc;
+    color: #494949;
+}
+
+.hytech-colorpicker:focus {
+    color: #111;
+}
+
+.sp-container {
+    background: #fff;
+    border: 1px solid #bcbcbc;
+}
+
+.sp-palette-container {
+    border-right: solid 1px #bcbcbc;
+}
+
+.sp-container button {
+    color: #494949;
+}
+
+.sp-container button:hover {
+    color: #111;
+}
+
+.sp-container button.sp-choose {
+    background: #6658ea;
+    color: #fff;
+}
+
+.sp-container button.sp-choose:hover,
+.sp-container button.sp-choose:focus {
+    background: #5546e8;
+    color: #fff;
+}
+
+.sp-clear-display:before {
+    color: #111;
+}
+
+.sp-colorize-container {
+    border-color:#bcbcbc !important;
+}
+
+/* ================= SELECT ================== */
+
+.hytech-select {
+    color: #494949;
+    background: #eee url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23aaaaaa' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.5rem center;
+    background-size: 20px 10px;
+    border: 1px solid #bcbcbc;
+}
+
+.hytech-select:focus {
+    border: 1px solid #6658ea;
+}
+
+.hytech-select:focus::-ms-value {
+    color: #465362;
+    background-color: #fff;
+}
+
+.select2-container--dark .select2-selection--single {
+    background: #eee;
+    border: 1px solid #bcbcbc;
+}
+
+.select2-container--dark .select2-selection--single .select2-selection__rendered {
+    color: #494949;
+}
+
+.select2-container--dark .select2-selection--single .select2-selection__arrow b {
+    border-color: #bcbcbc transparent transparent transparent;
+}
+
+.select2-container--dark .select2-selection--single .select2-selection__placeholder {
+    color: #fff;
+}
+
+.select2-container--open .select2-dropdown--below,
+.select2-container--open .select2-dropdown--above {
+    background: #fff;
+    border-color: #bcbcbc;
+}
+
+.select2-container--dark .select2-results__option--highlighted[aria-selected] {
+    background: #6658ea !important;
+    color: #ffffff;
+}
+
+.select2-container--dark .select2-results__option[aria-selected=true] {
+    background: #6658ea;
+    color: #fff;
+}
+
+.select2-drop {
+    border: 2px solid #bcbcbc;
+}
+
+.select2-drop.select2-drop-above {
+    border-top: 2px solid #bcbcbc;
+}
+
+.select2-container--dark .select2-search input {
+    border: 1px solid #bcbcbc;
+    background: #eee;
+    color: #111
+}
+
+.select2-container--dark .select2-search input:focus {
+    border: 1px solid #6658ea;
+}
+
+.select2-container--dark .select2-results__group {
+    border-top: 1px solid #bcbcbc;
+}
+
+/* ================= TABS ================== */
+
+.hytech-tabs-menu li:hover {
+    color: #111;
+}
+
+.hytech-tabs-menu li.active {
+    background: #6658ea;
+    color: #fff;
+}
+
+/* ================= TOGGLE ================== */
+
+.hytech-toggle-switch {
+    background: #bcbcbc;
+}
+
+.hytech-toggle-switch:before {
+    background: #fff;
+}
+
+.hytech-toggle-checkbox:checked+.hytech-toggle-switch {
+    background: #6658ea;
+}
+
+/* ================= CHECKBOX ================== */
+
+.hytech-checkmark {
+    background-color: #eee;
+    border: 1px solid #bcbcbc;
+}
+
+.hytech-checkbox input:checked~.hytech-checkmark {
+    background-color: #6658ea;
+    border-color: #6658ea;
+}
+
+.hytech-checkbox .hytech-checkmark:after {
+    border: solid #111;
+    border-width: 0 3px 3px 0;
+}
+
+/* ================= CUSTOM CURSOR ================== */
+
+.tm-pointer-simple.tm-cursor {
+    background-color: #fff;
+}
+
+/* ================= MODAL ================== */
+
+.hytech-modal {
+    background: rgba(224, 224, 224, 0.9);
+}
+
+.hytech-modal-inner>.hytech-tabs>.hytech-tabs-menu>li {
+    background: transparent;
+  color:#494949;
+}
+
+.hytech-modal-inner>.hytech-tabs>.hytech-tabs-menu>li:hover, 
+.hytech-modal-inner>.hytech-tabs>.hytech-tabs-menu>li.active {
+    background: #fff;
+  color:#111;
+}
+
+.hytech-modal-inner>.hytech-tabs>.hytech-tab,
+.hytech-modal-bg {
+    background: #fff;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.20), 0 15px 12px rgba(0, 0, 0, 0.12);
+}
+
+.hytech-modal-close {
+    color: #fff;
+    background: #F44336;
+}
+
+.hytech-modal-close:hover {
+    color: #fff;
+    background: #D32F2F;
+}
+
+.hytech-modal-close .material-icons {
+    font-size: 20px;
+    line-height: 36px;
+}
+
+#hytech-download-as-json,
+#hytech-save-as-json {
+    border-top: 1px dashed #bcbcbc;
+}
+
+.hytech-select-btn-block>div:first-child {
+    border-right: 1px dashed #bcbcbc
+}
+
+/* ================= TEMPLATE LIBRARY ================== */
+
+.hytech-template-list {
+    border: 1px solid #bcbcbc;
+}
+
+.hytech-template-list li {
+    border-bottom: 1px solid #bcbcbc;
+}
+
+.hytech-template-list li.active {
+    background:#eee
+}
+
+#hytech-history-list li .info .material-icons {
+    color: #6658ea;
+}
+
+#hytech-history-list li .info span.time {
+    background: #fff;
+    color:#111;
+}
+
+/* ================= MASONRY ================== */
+
+.hytech-masonry-item .favorite {
+    background: #fff;
+}
+
+.hytech-masonry-item-inner {
+    border: 4px solid #eee;
+}
+
+.grid-item:hover .hytech-masonry-item-inner,
+.hytech-masonry-item-inner:hover {
+    border-color: #6658ea;
+}
+
+.hytech-masonry-item-desc {
+    background: #6658ea;
+    color: #fff
+}
+
+.hytech-svg-library-delete,
+.hytech-library-delete {
+    color: #fff;
+    background: #F44336;
+}
+
+.hytech-svg-library-delete:hover,
+.hytech-library-delete:hover {
+    background: #D32F2F;
+}
+
+a.pexels-url {
+    color: #6658ea;
+    background: #fff;
+}
+
+a.pexels-url:hover {
+    color: #544abf;
+}
+
+#pexels-credit {
+    color:#494949;
+}
+
+/* ================= RULER ================== */
+
+.guide.v {
+    border-right: 1px solid #6658ea;
+}
+
+.guide.h {
+    border-bottom: 1px solid #6658ea;
+}
+
+.guide .info {
+    background-color: #111;
+    border: 1px solid #111;
+    color: #fff;
+}
+
+.ruler {
+    background-color:#eee;
+}
+
+.ruler .label {
+    color: #494949;
+}
+
+.ruler.h {
+    border-bottom: 1px solid #bcbcbc;
+}
+
+.ruler.h span.major {
+    border-left: 1px solid #bcbcbc
+}
+
+.ruler.h span.milestone {
+    border-left: 1px solid #bcbcbc
+}
+
+.ruler.v {
+    border-right: 1px solid #bcbcbc
+}
+
+.ruler.v span.major {
+    border-top: 1px solid #bcbcbc;
+}
+
+.ruler.v span.milestone {
+    border-top: 1px solid #bcbcbc;
+}
+
+#hytech-ruler-icon {
+  background: #eee;
+    border-right:1px solid #bcbcbc;
+    border-bottom:1px solid #bcbcbc;
+}
+
+#hytech-ruler-icon.closed {
+    background: transparent;
+}
+
+.menu-btn {
+    background-color: #6658ea;
+    color: #fff;
+}
+
+.rg-menu {
+  border-right: 1px solid #bcbcbc;
+}
+
+.rg-menu li {
+    border-bottom: 1px solid #bcbcbc;
+}
+
+.rg-menu a {
+    background-color: #eee;
+  color: #494949;
+}
+
+.rg-menu a:hover,
+.rg-menu a.selected {
+    color: #000;
+}
+
+/* ================= MEDIA QUERIES ================== */
+
+@media only screen and (max-width: 800px) {
+    .hytech-modal-inner>.hytech-tabs>.hytech-tabs-menu>li {
+        background: #fff;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+}
